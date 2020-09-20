@@ -367,8 +367,13 @@
     </div>
     <div class="form-email">
         <h3 class="title-form-email">Подпишитесь на рассылку</h3>
-        <input type="email" name="user-name" id="email" class="form-field-email" placeholder="E-mail" />
-        <button type="submit" class="email-button">Подписаться</button>
+        <input type="email" name="user-name" id="email-footer" class="form-field-email" placeholder="E-mail" />
+        <button type="submit" class="email-button">Подписаться
+            <svg class="icon-send" width="24px" height="24px">
+                <use href="./icons/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+        </button>
+        
     </div>
 </div>
 </footer>
@@ -403,12 +408,15 @@
                 </svg>               
             </div>
             <div class="form-field">
-                <label class="form-label">Комментарий
-                    <textarea name="user-message" class="form-field-input text-comments" id="" placeholder="Введите текст" rows="6"></textarea>
+                <label for="user-message" class="form-label">Комментарий
+                    <textarea name="user-message" class="form-field-input text-comments" id="user-message" placeholder="Введите текст" rows="6"></textarea>
                 </label>               
             </div>
-            <span class="text-chexbox">Соглашаюсь с рассылкой и принимаю <a href="" class="text-chexbox-link">Условия договора</a></span>
-            <button class="button button-submit">Отправить</button>
+            <label for="checkbox" class="checkbox-label">
+                <input type="checkbox" class="checkbox visually-hidden" id="checkbox">
+                <span class="text-chexbox">Соглашаюсь с рассылкой и принимаю <a href="" class="text-chexbox-link">Условия договора</a></span>
+            </label>
+            <button class="button button-submit">Отправить</button>           
             
         </form>     
     </div>
