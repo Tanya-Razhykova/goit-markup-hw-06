@@ -27,7 +27,7 @@
             <ul class="list mail-tel">
                 <li class="item">
                     <a href="mailto:info@example.com" class="email link header">
-                        <svg class="header-icon email" width="16px" height="12px">
+                        <svg class="header-icon email">
                             <use href="./icons/symbol-defs.svg#icon-envelope"></use>
                         </svg>
                         info@example.com</a>
@@ -47,7 +47,7 @@
     <!-- filter -->
     <section class="filter">
         <div class="container">
-            <!-- <h1 class="title-portfolio">Портфолио</h1> -->
+            <h1 class="title-portfolio visually-hidden">Портфолио</h1>
             <ul class="list filter">
                 <li class="portfolio-filter"><a href="">Все</a></li>
                 <li class="portfolio-filter"><a href="">Веб-сайты</a></li>
@@ -222,6 +222,18 @@
             </li>
         </ul>
     </div>
+    <div class="form-email">
+        <h3 class="title-form-email">Подпишитесь на рассылку</h3>
+        <div class="email-form">
+        <input type="email" name="user-name" id="email-footer" class="form-field-email" placeholder="E-mail" />
+        <button type="submit" class="email-button">Подписаться
+            <svg class="icon-send" width="24px" height="24px">
+                <use href="./icons/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+        </button>
+        </div>
+    </div>
+</div>
 </footer>
 </body>
 </html>
