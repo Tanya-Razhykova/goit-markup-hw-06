@@ -112,19 +112,33 @@ hr {
     color: var(--color-blue);
 }
 
-/* .link:hover::after,
-.link:focus::after {
-    content: "";
-    opacity: 1;
-} */
-
-.link-nav.link::after:hover,
-.link-nav.link::after:active,
-.link-nav.link::after:focus, {
+.link-nav:hover::after,
+.link-nav:focus::after,
+.link-nav:active::after {
     opacity: 1;
 }
 
-.link::after {
+.link-current.link.link-nav::after {
+    opacity: 1;
+    color: var(--color-blue);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link-current.link.link-nav {
+    color: var(--color-blue);
+    text-decoration: none;
+    display: inline-block;
+}
+/* .link-nav.link::after:hover,
+.link-nav.link::after:active,
+.link-nav.link::after:focus, {
+    content: "";
+    opacity: 1;
+    color: var(--color-blue);
+} */
+
+.link-nav::after {
     content: "";
     position: absolute;
     left: 0;
