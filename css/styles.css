@@ -130,13 +130,6 @@ hr {
     text-decoration: none;
     display: inline-block;
 }
-/* .link-nav.link::after:hover,
-.link-nav.link::after:active,
-.link-nav.link::after:focus, {
-    content: "";
-    opacity: 1;
-    color: var(--color-blue);
-} */
 
 .link-nav::after {
     content: "";
